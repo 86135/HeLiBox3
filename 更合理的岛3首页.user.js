@@ -8,11 +8,12 @@
 // @match        https://box3.fun/*
 // @icon         https://static.box3.codemao.cn/block/QmURFSjE2YvBhi5XYCXbyZHfDiHTedbYUtEQY4PyZmH7ft.png
 // @grant        none
+// @license      GPL
 // ==/UserScript==
 var a=()=>{
     document.querySelectorAll('._1yZ6NeMjfGScb4F10xmspg').forEach(e=>{
         e.style="width:180px;";
-        let author=e.firstChild.children[1].firstChild.children[2].firstChild.children[1].innerHTML
+        let author=e.firstChild.children[1].firstChild.children[2].children[1].innerHTML
         if(((author==='吉吉喵'||author==="爱出海的王路飞")||(author==="搬砖喵"||author==="安静的土岩龙"))||(author==="MOYO"||author==="火山哥哥"))
             document.querySelector('._2p590X3xza5oTJJZ3ToFcx').removeChild(e);
         let type=e.firstChild.firstChild.children[1].firstChild.innerHTML;
